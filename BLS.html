@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLS Procedure</title>
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ </head>
+ <body>
+     <button class="hamburger" onclick="toggleMenu()"> 
+    <i class="fas fa-bars"></i>
+     </button>
+  <div class="sidebar">
+   <div class="sidebar-header">
+    <h2>RP BLS KIT</h2>
+    <small>by Alpenl A.K.A Desta</small>
+   </div>
+   <div class="nav-menu">
+    <div class="nav-link" onclick="sc('sec1')">
+     <i class="fas fa-stethoscope"></i> Respon &amp; Damages
+    </div>
+    <div class="nav-link" onclick="sc('sec2')">
+     <i class="fas fa-droplet"></i> Bleeding Management
+    </div>
+    <div class="nav-link" onclick="sc('sec3')">
+     <i class="fas fa-heartbeat"></i> Circulation
+    </div>
+    <div class="nav-link" onclick="sc('sec4')">
+     <i class="fas fa-wind"></i> Airway
+    </div>
+    <div class="nav-link" onclick="sc('sec5')">
+     <i class="fas fa-lungs"></i> Breathing
+    </div>
+    <div class="nav-link" onclick="sc('sec6')">
+     <i class="fas fa-band-aid"></i> Luka &amp; Fraktur
+    </div>
+   </div>
+   <a href="index.html" target="_self" class="nav-link">
+     <i class="fas fa-stethoscope"></i> Home Page
+    </a>
+  </div>
+  <div class="main">
+   <div class="header-box">
+    <h1 style="font-size: 20px;">Dashboard Dokumentasi RP</h1>
+    <div class="stats">
+        <div class="stat-card">
+        <i class="fas fa-eye"></i> <span id="v">0</span> Visits
+        </div>
+        <div class="stat-card">
+        <i class="fas fa-copy"></i> <span id="c">0</span> Copies
+        </div>
+    </div>
+   </div>
+   <!-- End of Header Box -->
+   <div class="section" id="sec1">
+    <div class="section-title">Respon &amp; damages</div>
+    <div class="row">
+     <div class="text">/me Meletakkan BLS kit disamping tubuh korban, mengambil N.Gloves lalu memakainya.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me Memeriksa respon korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/l Halo, apakah anda bisa mendengar suara saya?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">
+      Alert = respon dengan baik
+      Verbal = hanya merasakan rangsangan suara
+      Pain Stimuli = rangsangan otot, cubitan
+      Unresponsive = tidak ada respon sama sekali
+    </div>
+    <div class="row">
+     <div class="text">/me Mencubit lengan korban dengan perlahan</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>    
+    <div class="row">
+     <div class="text">/do Apakah korban memberikan reaksi?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me Memeriksa kondisi korban dengan teliti.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 1 -->
+   <div class="section" id="sec2">
+    <div class="section-title">Pendarahan (Bleeding)</div>
+    <div class="row">
+     <div class="text">/me Mengambil Trauma dressing dari dalam BLS kit, membuka kain yang menghalangi luka.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah pendarahan berhasil dihentikan?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Pembalutan Trauma Dressing kembali</b></div>
+    <div class="row">
+     <div class="text">/me Mengambil Trauma Dressing yang baru, membalutkannya kembali lalu memberikan tekanan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah pendarahan telah terhenti?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Elevation</b></div>
+    <div class="row">
+     <div class="text">/me Mengangkat lengan korban yang masih terjadi pendarahan keatas dada.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah pendarahan berhenti?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Arterial Pressure</b></div>
+    <div class="row">
+        <div class="text">/me Menekan arteri yang berada diatas luka pendarahan.</div>
+        <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+        <div class="text">/do Apakah pendarahan berhenti?</div>
+        <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Tourniquet</b></div>
+    <div class="row">
+     <div class="text">/me Mengambil tourniquet dari dalam BLS kit, mengikatnya diatas luka pendarahan, lalu mengencangkannya hingga pendarahan berhenti.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>CRoC (Combat Ready Clamp(Groin))</b></div>
+    <div class="row">
+     <div class="text">/me mengambil CRoC dari dalam BLS kit lalu merakit CRoC tersebut.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me meletakkan CRoC di area luka yang mengalami pendarahan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memposisikan lengan mendatar CRoC di atas luka pendarahan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memastikan kepala cakram CRoC menyentuh luka pendarahan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memutar T-Handle, memberikan tekanan hingga pendarahan terhenti.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah pendarahan telah terhenti?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 2 -->
+   <div class="section" id="sec3">
+    <div class="section-title">Circulation</div>
+    <div class="row">
+     <div class="text">/me meletakkan jari telunjuk dan jari tengahnya ke carotid artery korban, memeriksa denyut nadinya.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do berapa denyut nadi permenit korban? (60-100 BPM Normal.)</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">Sebelum melakukan penanganan, pastikan airway korban clear.</div>
+    <div class="plain-text">Cardiopulmonary Resuscitation (CPR) - jika dibawah normal, gunakan cara ini.</div>
+    <div class="row">
+     <div class="text">/me memposisikan kedua tangannya di atas dada pasien dan memberikan tekanan 30x per menit</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil BVM, memasangkan BVM pada mulut dan hidung korban, lalu memberikan 2x pernafasan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do berapa denyut nadi korban setelah dilakukan BVM dan CPR? (60-100 BPM Normal.)</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Automated External Defibrillator (AED) Digunakan apabila denyut nadi 0</b></div>
+    <div class="row">
+     <div class="text">/me mengambil AED dari dalam Ambulance, meletakkanya disamping tubuh korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil Alkohol swab dan kapas, mengoleskan bagian dada korban dengan alkohol.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menyalakan AED tersebut, lalu meletakkan Pads AED di atas dada pasien.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do AED otomatis akan memberikkan shock.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 3 -->
+   <div class="section" id="sec4">
+    <div class="section-title"> Airway </div>
+    <div class="plain-text">//ABC bagian A = Airway. ada 2 teknik Head Tilt dan Jaw Trust. JANGAN LUPA, KALAU KORBAN ALERT, SURUH AJA BUKA MULUTNYA</div>
+    <div class="row">
+     <div class="text">/me Membuka mulut korban dengan metode Headtilt.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me Mengambil Penlight dari dalam BLS kit, mengarahkannya kemulut korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah ada halangan di Airway korban?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memiringkan tubuh dan kepala korban, lalu memijat leher belakang korban hingga halangan korban keluar</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah halangan pada airway berhasil keluar?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil tweezer dari dalam bls ini kalau mau pake tewwzer</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memasukkan tangan ke dalam mulut korban dan meraih halangan pada airway korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mencoba untuk mengeluarkan halangan pada airway korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah halangan berhasil keluar?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 4 -->
+    <div class="section" id="sec5">
+    <div class="section-title">Breathing</div>
+    <div class="row">
+     <div class="text">/me Mendekatkan telinganya kemulut korban sembari melihat kearah dada, menghitung jumlah pernafasannya.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do berapa jumlah pernafasan korban? (12-20 LPM Normal.)</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+     <div class="plain-text"><b>Simple Face Mask (SFM) Digunakan apabila jumlah pernafasan korban ada di angka 5-10 LPM</b></div>
+    <div class="row">
+     <div class="text">/me mengambil SFM dari BLS lalu meletakkannya disamping.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memasangkan SFM ke mulut dan hidung pasien, lalu mengamankannya dengan memasang pengait dibelakang kepala pasien.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil mini oxygen outlet dari dalam BLS kit dan meletakkannya didekat tubuh korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menyambungkan kabel SFM ke canister, memutar katupnya ke arah 10L/M.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do Oksigen akan membantu pasien untuk bernafas normal.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Nasal Cannula, Digunakan apabila jumlah pernafasan korban ada di angka 1-5 LPM</b></div>
+    <div class="row">
+     <div class="text">/me mengeluarkan Nasal Cannula dari dalam BLS.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil mini oxygen outlet dari dalam BLS kit, meletakkanya disamping tubuh korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memutar katup pada canister ke 4L/M.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memasukkan ujung Nasal Cannula ke lubang hidung korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Non-rebreather mask, Digunakan apabila jumlah pernafasan korban ada di angka 10-15 LPM</b></div>
+    <div class="row">
+     <div class="text">/me mengambil Non-rebreather mask dari dalam BLS kit.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil mini oxygen outlet dari dalam BLS kit, meletakkannya disamping tubuh korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button> 
+    </div>
+    <div class="row">
+        <div class="text">/me memutar katup pada canister ke 15L/M.</div>
+        <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memasangkan Non-rebreather mask ke Canister.</div>
+        <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memasangkan Non-rebreather mask di sekitaran mulut dan hidung pasien lalu mengamankannya.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    </div> 
+    <!-- End of Section 5 -->
+   <div class="section" id="sec6">
+    <div class="section-title">Penanganan Luka</div>
+    <div class="plain-text"><b>Luka terbuka (Tergores)</b></div>
+    <div class="row">
+     <div class="text">/me mengambil saline solution dan cutton pad dari BLS</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menuangkan saline solution keatas cutton pad lalu mengoleskannya ke luka korban</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil gauze pad dan medical tape dari BLS</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menaruh gauze pad diatas luka korban dan merekatkannya dengan medical tape</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Luka Memar</b></div>
+    <div class="row">
+     <div class="text">/me mengambil ICP dan kain tipis dari dalam BLS kit</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menaruh ICP diatas luka memar korban, lalu menunggunya selama 15 menit</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do 15 menit berlalu</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me Mengangkat ICP, mengambil kain lalu menyimpannya kedalam BLS kit</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Luka Bakar</b></div>
+    <div class="row">
+     <div class="text">/me mengambil alkohol swab dan kapas dari dalam BLS kit</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengoleskan alkohol ke kapas lalu mengoleskannya ke luka bakar korban</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+        <div class="text">/me mengambil non stick bandage dan medical tape dari dalam BLS kit</div>
+        <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+        <div class="text">/me menaruh non stick bandage diatas luka bakar korban, lalu merekatkannya dengan medical tape</div>
+        <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Triangular Bandage</b> Jika kamu merasakan ada tulang yang patah di bagian lengan, maka diwajibkan untuk kamu menggunakan Triangular Bandage. Triangular Bandage digunakan untuk mencegah cedera lebih lanjut pada lengan yang patah. Cara memakai Triangular Bandage adalah dengan mengaitkan ujung satu ke belakang leher dan ujung satu lagi ke bawah lengan yang patah secara DIAGONAL. Jika tulang patah terbuka/compound, segera lakukan D.E.A.T lalu pasangkan Triangular Bandage, alat ini terdapat di dalam BLS kit anda.
+Cara memakai Triangular Bandage</div>
+    <div class="row">
+     <div class="text">/me memposisikan lengannya menjadi huruf L di depan dadanya.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengaplikasikan Triangular Bandage tersebut dan mengikatnya di belakang leher korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   <div class="plain-text"><b>Cervical Collar (C-Collar)</b> patah di bagian leher atau tulang belakang</div>
+    <div class="row">
+     <div class="text">/me mengambil C-Collar dari dalam BLS kit, membuka kancingnya lalu memasangnya pada leher korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Vacuum Splint</b>  digunakan untuk pasien yang mengalami patah tulang pada Lengan & Kaki.</div>
+    <div class="row">
+     <div class="text">/me mengambil Vacuum Splint dan pompa portable dari BLS kit.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memasangkan Vacuum Splint pada bagian luka korban yang mengalami patah tulang dan mengunci katupnya.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memompa pompa portable tersebut hingga Vacuum Splint mengeras.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <!-- End of Section 6 -->
+   <div class="footer">
+    Dibuat oleh <b>Alpenl A.K.A Desta</b> © 2026
+   </div>
+  </div>
+  <div id="toast">Text Lo Berhasil di Copy Mpruy!!!</div>
+  <script>
+    // Logic Stats
+    let visits = localStorage.getItem('v_sol') || 0;
+    let copies = localStorage.getItem('c_sol') || 0;
+    visits++;
+    localStorage.setItem('v_sol', visits);
+    document.getElementById('v').innerText = visits;
+    document.getElementById('c').innerText = copies;
+
+    function sc(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+    }
+
+    function cp(btn) {
+        const txt = btn.parentElement.querySelector('.text').innerText;
+        navigator.clipboard.writeText(txt);
+        copies++;
+        localStorage.setItem('c_sol', copies);
+        document.getElementById('c').innerText = copies;
+        
+        const t = document.getElementById('toast');
+        t.style.display = 'block';
+        setTimeout(() => t.style.display = 'none', 1500);
+    }
+        function toggleMenu() {
+    document.querySelector('.sidebar').classList.toggle('show');
+}
+</script>
+ </body>
+</html>

@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="id">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ILS Procedure</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ </head>
+ <body>
+     <button class="hamburger" onclick="toggleMenu()"> 
+    <i class="fas fa-bars"></i>
+     </button>
+  <div class="sidebar">
+   <div class="sidebar-header">
+    <h2>RP ILS</h2>
+    <small>by Alpenl A.K.A Desta</small>
+   </div>
+   <div class="nav-menu">
+         <div class="nav-link" onclick="sc('sec1')">
+     <i class="fas fa-stethoscope"></i> Respon &amp; Damages</div>
+    <div class="nav-link" onclick="sc('sec2')">
+     <i class="fas fa-droplet"></i> Bleeding Management</div>
+    <div class="nav-link" onclick="sc('sec3')">
+     <i class="fas fa-syringe"></i> Giving medicine </div>
+    <div class="nav-link" onclick="sc('sec4')">
+     <i class="fas fa-droplet"></i> Circulation </div>
+    <div class="nav-link" onclick="sc('sec5')">
+     <i class="fas fa-wind"></i> Airway </div>
+    <div class="nav-link" onclick="sc('sec6')">
+     <i class="fas fa-heartbeat"></i> Breathing </div>
+     <div class="nav-link" onclick="sc('sec8')">
+     <i class="fas fa-band-aid"></i> Luka &amp; Fraktur
+    </div>
+   </div>
+   <a href="index.html" target="_self" class="nav-link">
+     <i class="fas fa-stethoscope"></i> Home Page
+    </a>
+  </div>
+  <di class="main">
+   <div class="header-box">
+    <h1 style="font-size: 20px;">Dashboard Dokumentasi RP</h1>
+    <div class="stats">
+        <div class="stat-card">
+        <i class="fas fa-eye"></i> <span id="v">0</span> Visits
+        </div>
+        <div class="stat-card">
+        <i class="fas fa-copy"></i> <span id="c">0</span> Copies
+        </div>
+    </div>
+   </div>
+   <!-- End of Header Box -->
+   <div class="section" id="sec0">
+    <div class="section-title">Pengenalan</div>
+    <div class="row">
+    <div class="text">Intermediate Life Support / ILS adalah tingkat perawatan medis darurat yang berada di
+antara Basic Life Support / ILS dan Advanced Life Support / ALS.</div>
+    </div>
+    <div class="row">
+    <div class="text">Personel tingkat ILS biasanya dilatih untuk melakukan tindakan seperti...</div>
+    </div>
+    <div class="row">
+    <div class="text">Manajemen jalan napas tingkat lanjut, Pemberian cairan melalui infus (IV),Pemberian obat-obatan darurat tertentu sesuai protokol yang berlaku.
+</div>
+    </div>
+   </div>
+  <!-- End of Section 0 -->
+      <div class="section" id="sec1">
+    <div class="section-title">Respon &amp; damages</div>
+    <div class="row">
+     <div class="text">/me Meletakkan ILS bag disamping tubuh korban, mengambil N.Gloves lalu memakainya.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me Memeriksa respon korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/l Halo, apakah anda bisa mendengar suara saya?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">
+      Alert = respon dengan baik
+      Verbal = hanya merasakan rangsangan suara
+      Pain Stimuli = rangsangan otot, cubitan
+      Unresponsive = tidak ada respon sama sekali
+    </div>
+    <div class="row">
+     <div class="text">/me Mencubit lengan korban dengan perlahan</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>    
+    <div class="row">
+     <div class="text">/do Apakah korban memberikan reaksi?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me Memeriksa kondisi korban dengan teliti.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 1 -->
+   <div class="section" id="sec2">
+    <div class="section-title">Pendarahan (Bleeding)</div>
+    <div class="row">
+     <div class="text">/me Mengambil Trauma dressing dari dalam ILS bag, membuka kain yang menghalangi luka.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah pendarahan berhasil dihentikan?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Pembalutan Trauma Dressing kembali</b></div>
+    <div class="row">
+     <div class="text">/me Mengambil Trauma Dressing yang baru, membalutkannya kembali lalu memberikan tekanan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah pendarahan telah terhenti?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Elevation</b></div>
+    <div class="row">
+     <div class="text">/me Mengangkat lengan korban yang masih terjadi pendarahan keatas dada.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah pendarahan berhenti?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Arterial Pressure</b></div>
+    <div class="row">
+        <div class="text">/me Menekan arteri yang berada diatas luka pendarahan.</div>
+        <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+        <div class="text">/do Apakah pendarahan berhenti?</div>
+        <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>Tourniquet</b></div>
+    <div class="row">
+     <div class="text">/me Mengambil tourniquet dari dalam ILS bag, mengikatnya diatas luka pendarahan, lalu mengencangkannya hingga pendarahan berhenti.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"><b>CRoC (Combat Ready Clamp(Groin))</b></div>
+    <div class="row">
+     <div class="text">/me mengambil CRoC dari dalam ILS bag lalu merakit CRoC tersebut.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me meletakkan CRoC di area luka yang mengalami pendarahan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memposisikan lengan mendatar CRoC di atas luka pendarahan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memastikan kepala cakram CRoC menyentuh luka pendarahan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memutar T-Handle, memberikan tekanan hingga pendarahan terhenti.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah pendarahan telah terhenti?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 2 -->
+   <div class="section" id="sec3">
+    <div class="section-title">Giving Medicine</div>
+    <div class="row">
+     <div class="text">/me  mengambil alkohol swab dari ILS bag, kemudian mengoleskan nya pada
+bagian punggung tangan secara pelan dan merata.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text"> Ephinefrin (IV): Memacu jantung dan menyempitkan pembuluh darah.
+
+Amiodarone (IV): Mengatasi gangguan irama jantung berat (VF/VT).
+
+Cairan Kristaloid (NaCl 0,9%): Menambah volume darah dan pembilas obat. 
+
+Salbutamol (IV): Mengatasi asma dan gangguan pernapasan lainnya.
+
+Morphine / Fentanyl (IV): Pereda nyeri berat.(serangan Jantung atau trauma berat)</div>
+    <div class="row">
+     <div class="text">/me mengambil set infus, abocath, dan (nama Obat), perlahan
+menusukkan jarum ke vena di punggung tangan korban.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menyuntikkan obat darurat melalui injection port, mengatur tetesan cairan agar masuk secara konstan ke aliran darah.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me membuang jarum bekas pakai ke dalam safety box,
+menempelkan plester fikasi.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do Terlihat cairan obat mengalir lancar ke pembuluh darah </div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 3 -->
+   <div class="section" id="sec4">
+    <div class="section-title">Circulation</div>
+    <div class="row">
+     <div class="text">/me meletakkan jari telunjuk ke carotid artery, menghitung denyut nadinya.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do Berapa jumlah denyut nadi korban? (60-100 normal)</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+        <div class="plain-text">Teknik CPR dan BVM:</div>
+    <div class="row">
+     <div class="text">/me memposisikan tangan di tengah dada pasien, lalu mulai melakukan CPR sebanyak 30 kali selama 1 menit.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil BVM dari ILS bag, memasangkannya pada mulut dan hidung korban. Menekan kantung udara BVM 4 kali, agar udara mengalir.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">teknik CARDIAC ARREST (Epinephrine)</div>
+    <div class="row">
+     <div class="text">/me mengambil alkohol swab dari ILS bag, kemudian mengoleskan nya pada
+bagian punggung tangan secara pelan dan merata.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil set infus, abocath, dan Epinephrine, lalu secara perlahan menusukkan jarum ke vena di punggung tangan korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menyuntikkan obat darurat melalui injection port pada selang infus,
+kemudian mengatur tetesan cairan agar masuk secara konstan ke aliran darah.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me membuang jarum bekas pakai ke dalam safety box dan menempelkan
+plester fiksasi pada area suntikan agar posisi jarum tidak bergeser.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do Terlihat cairan obat mengalir lancar ke pembuluh darah</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">CARDIAC ARREST (AED)</div>
+    <div class="row">
+     <div class="text">/me mengambil AED dan Alkohol swab dari dalam ILS bag, membuka baju
+korban di area dada nya kemudian mengoleskan alkohol swab secara merata.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menempelkan bantalan elektroda AED pada dada korban, kemudian
+menyalakan AED untuk memantau irama jantung korban secara manual.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do AED mendeteksi irama jantung memerlukan shock.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menekan tombol shock pada AED, setelah shock ia kemudian melakukan
+kompresi jantung sebanyak 30 kali selama 1 menit.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 4 -->
+   <div class="section" id="sec5">
+    <div class="section-title">Airway </div>
+    <div class="plain-text">//MEMBUKA AIRWAY (Head Tilt/Chin Lift) (Pingsan Biasa)</div>
+    <div class="row">
+     <div class="text">/me menekan dahi pasien ke bawah sambil mengangkat tulang dagu ke atas
+menggunakan dua jari agar pangkal lidah terangkat dan jalan napas terbuka.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">/meMBUKA AIRWAY (Jaw Thrust) (Trauma Berat/Kecelakaan)</div>
+    <div class="row">
+     <div class="text">/me mendorong sudut rahang bawah pasien ke arah depan tanpa menggerakkan posisi leher untuk membuka jalan napas dengan aman.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me mengambil Penlight dari dalam ILS, menyalakkannya lalu memeriksa Airway Korban.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do apakah ada halangan di Airway korban?</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">//HALANGAN BENDA PADAT (Tweezer)</div>
+    <div class="row">
+     <div class="text">/me  mengambil tweezer dari dalam ILS bag, kemudian mencoba mengambil
+halangan tersebut dengan cara menjepit nya dan menariknya keluar</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">//HALANGAN BENDA CAIR (Suction)</div>
+    <div class="row">
+     <div class="text">/me  memasukkan kateter suction ke dalam rongga mulut hingga pangkal lidah,
+lalu menariknya keluar secara melingkar sambil menyedot cairan yang menghambat napas.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">//OPA (Oropharyngeal Airway) (Pasien Pingsan) (Membantu jalan nafas tetap
+terbuka)</div>
+    <div class="row">
+     <div class="text">/me memasukkan alat OPA dengan posisi melengkung keatas,memutarnya 180 derajat saat mencapai langit-langit mulut.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+   <!-- End of Section 5 -->
+   <div class="section" id="sec6">
+    <div class="section-title">Breathing</div>
+    <div class="plain-text">//Cek Manual</div>
+    <div class="row">
+     <div class="text">/me mendekatkan telinga ke hidung dan mulut korban, sekaligus memfokuskan
+pandangan ke arah dada korban dan memeriksa pernafasannya.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do Jumlah Pernafasan? (12-20 normal) </div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">//CEK SATURASI OKSIGEN dengan Pulse Oximeter</div>
+    <div class="row">
+     <div class="text">/me mengambil oximeter dari ILS bag, menjepitkannya pada
+ujung jari telunjuk tangan kanan korban untuk mengukur saturasi oksigen.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/do Saturasi oksigen? (95-100 persen normalnya)</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">//NASAL CANNULA (90-94)</div> 
+    <div class="row">
+     <div class="text">/me memutar flowmeter pada tabung oksigen ke angka 4 LPM, lalu mengecek
+aliran udara di ujung selang menggunakan punggung tangan.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memasangkan kedua kanula ke lubang hidung pasien dan menyampirkan
+talinya ke belakang telinga agar posisi selang tidak bergeser.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">//SIMPLE FACE MASK 85-89%</div>
+    <div class="row">
+     <div class="text">/me membuka katup tabung oksigen dan mengatur aliran pada 8 LPM,
+kemudian memastikan masker wajah dalam kondisi bersih.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me memposisikan masker SFM menutupi hidung hingga dagu pasien, lalu
+menarik tali elastisnya ke belakang kepala agar masker menempel rapat.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="plain-text">//NON-REBREATHING MASK (dibawah 85 )</div>
+    <div class="row">
+     <div class="text">/me memutar knop tabung oksigen ke aliran maksimal 15 LPM, lalu menutup
+katup masker hingga kantung reservoar terisi penuh.</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+    <div class="row">
+     <div class="text">/me menempelkan masker NRM dengan teknik seal yang kuat pada wajah
+pasien agar oksigen murni tidak bercampur dengan udara luar.
+</div>
+     <button class="copy-btn" onclick="cp(this)">SALIN</button>
+    </div>
+   </div>
+  <!-- End of Section 6 -->
+   <div class="footer">
+    Dibuat oleh <b>Alpenl A.K.A Desta</b> © 2026
+   </div>
+  </div>
+  <div id="toast">Text Lo Berhasil di Copy Mpruy!!!</div>
+  <script>
+    // Logic Stats
+    let visits = localStorage.getItem('v_sol') || 0;
+    let copies = localStorage.getItem('c_sol') || 0;
+    visits++;
+    localStorage.setItem('v_sol', visits);
+    document.getElementById('v').innerText = visits;
+    document.getElementById('c').innerText = copies;
+
+    function sc(id) {
+        document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        document.querySelectorAll('.nav-link').forEach(el => el.classList.remove('active'));
+        event.currentTarget.classList.add('active');
+    }
+
+    function cp(btn) {
+        const txt = btn.parentElement.querySelector('.text').innerText;
+        navigator.clipboard.writeText(txt);
+        copies++;
+        localStorage.setItem('c_sol', copies);
+        document.getElementById('c').innerText = copies;
+        
+        const t = document.getElementById('toast');
+        t.style.display = 'block';
+        setTimeout(() => t.style.display = 'none', 1500);
+    }
+        function toggleMenu() {
+    document.querySelector('.sidebar').classList.toggle('show');
+}
+</script>
+ </body>
+</html>
